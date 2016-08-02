@@ -1,0 +1,204 @@
+@import "notosanskr.css";
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*-------------------------------------------------------------------*/
+
+.ranking {
+
+}
+
+.ranking__h3 {
+    margin: 15px 0;
+    text-align:center
+}
+
+.thumb {
+
+}
+.navbar-default {
+  background-color: white;
+  border: 0px;
+}
+
+.navbar-nav {
+  margin: 0px -15px;
+}
+
+.navbar-default .navbar-brand {
+  color: #333;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #333;
+}
+.navbar-nav>li:first-child>a {
+  border-top: solid 1px #f0f0f0
+}
+
+.navbar > .container {
+  background: #fff !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: 0;
+}
+
+/* 3-lines menu button */
+.navbar-toggle {
+  float: left;
+}
+
+.navbar-default .navbar-toggle {
+  border: 0px;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  border: 0px;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle.clicked .icon-bar {
+  background-color: #d6b161;
+}
+
+/* disble menu dropdown animation */
+.collapsing {
+  -webkit-transition: none;
+  transition: none;
+}
+
+/* each menu row */
+.navbar-nav>li>a {
+  width: 100%;
+  padding: 12px 20px;
+  display: block;
+  border-bottom: solid 1px #f0f0f0;
+}
+.navbar-default .navbar-nav li .indicator {
+  width: 60px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 22px;
+  text-align: center;
+  line-height: 43px;
+  border-left: solid 1px #f5f5f5;
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+  .navbar-default .navbar-nav>li.open>ul>li:active>a {
+    color: #d6b161;
+  }
+
+  .navbar-default .navbar-nav>.open>a,
+  .navbar-default .navbar-nav>.open>a:focus,
+  .navbar-default .navbar-nav>.open>a:hover{
+    color: #d6b161;
+    border-color: #f0f0f0;
+    background-color: white;
+  }
+
+  .container>.navbar-collapse,
+  .container>.navbar-header{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .navbar-default .menuzord-menu.menuzord-indented>li>ul.dropdown>li>ul.dropdown>li>a {
+    padding-left: 60px;
+  }
+
+  .navbar-brand {
+    padding-left: 0px;
+  }
+}
+
+/* desktop - prevent hide menu button*/
+@media (min-width:768px) {
+    .navbar-header { float: none }
+    .navbar-left,
+    .navbar-right { float: none !important }
+    .navbar-toggle { display: block }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        overflow: hidden;
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none;
+        visibility: hidden;
+        height: 0px;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li { float: none }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    .navbar-nav .open .dropdown-menu > li > a,
+    .navbar-nav .open .dropdown-menu .dropdown-header { padding: 5px 15px 5px 25px }
+    .navbar-nav .open .dropdown-menu > li > a { line-height: 20px }
+    .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-nav .open .dropdown-menu > li > a:focus { background-image: none }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a { color: #777 }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #333;
+        background-color: transparent;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #555;
+        background-color: #e7e7e7;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #ccc;
+        background-color: transparent;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header { border-color: #080808 }
+    .navbar-inverse .navbar-nav .open .dropdown-menu .divider { background-color: #080808 }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a { color: #9d9d9d }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fff;
+        background-color: transparent;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #fff;
+        background-color: #080808;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+    .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+        color: #444;
+        background-color: transparent;
+    }
+}
