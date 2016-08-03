@@ -12,4 +12,17 @@ $(document).ready(function () {
       $("button.navbar-toggle").removeClass("clicked");
   });
 
+  /*------------------------------------------------
+  dropdown menu as hover
+  -------------------------------------*/
+  // $('button.navbar-toggle').hover(function(){
+  //   var target = $(this).data("target");
+  //   console.log(target);
+  //   $(target).toggle();
+  // });
+
+  $('button.navbar-toggle').click(function(){
+    console.log("A");
+  });
+
 });

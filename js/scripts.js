@@ -53,17 +53,17 @@
          alternate menu appear
          --------------------------------------------- */
 
-        $("#massive-menu-alt").html('<ul class="menuzord-menu">' + $("#menu-list").html() + "</ul>");
+        // $("#massive-menu-alt").html('<ul class="menuzord-menu">' + $("#menu-list").html() + "</ul>");
 
 
-        /* ---------------------------------------------
-         massive mega menu
-         --------------------------------------------- */
+        //  ---------------------------------------------
+        //  massive mega menu
+        //  ---------------------------------------------
 
-        jQuery("#massive-menu, #massive-menu-alt").menuzord({
-            indicatorFirstLevel: "<i class='fa fa-angle-down'></i>",
-            indicatorSecondLevel: "<i class='fa fa-angle-right'></i>"
-        });
+        // jQuery("#massive-menu, #massive-menu-alt").menuzord({
+        //     indicatorFirstLevel: "<i class='fa fa-angle-down'></i>",
+        //     indicatorSecondLevel: "<i class='fa fa-angle-right'></i>"
+        // });
 
 
         /* ---------------------------------------------
