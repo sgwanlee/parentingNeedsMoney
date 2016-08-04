@@ -1,0 +1,120 @@
+// Place all the styles related to the Static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "notosanskr.css";
+@import "custom.css";
+@import "theme_style.css";
+@import "theme_style_responsive.css";
+@import "animate.css";
+@import "notosanskr.css";
+@import "linea-icon.css";
+@import "desktop";
+@import "mobile";
+
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.ranking {
+
+}
+
+.ranking__h3 {
+    margin: 15px 0;
+    text-align:center
+}
+
+.thumb {
+
+}
+.navbar-default {
+  background-color: white;
+  border: 0px;
+}
+
+.navbar-nav {
+  margin: 0px -15px;
+}
+
+.navbar-default .navbar-brand {
+  color: #333;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #333;
+}
+.navbar-nav>li:first-child>a {
+  border-top: solid 1px #f0f0f0
+}
+
+.navbar > .container {
+  background: #fff !important;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: 0;
+}
+
+/* 3-lines menu button */
+.navbar-toggle {
+  float: left;
+}
+
+.navbar-default .navbar-toggle {
+  border: 0px;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  border: 0px;
+  background-color: transparent;
+}
+
+.navbar-default {
+  .navbar-toggle.clicked {
+    .icon-bar {
+      background-color: #d6b161;
+    }
+  }
+}
+
+/* disble menu dropdown animation */
+.collapsing {
+  -webkit-transition: none;
+  transition: none;
+}
+
+/* each menu row */
+.navbar-nav>li>a {
+  width: 100%;
+  padding: 12px 20px;
+  display: block;
+  border-bottom: solid 1px #f0f0f0;
+}
+.navbar-default .navbar-nav li .indicator {
+  width: 60px;
+  height: 45px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 22px;
+  text-align: center;
+  line-height: 43px;
+  border-left: solid 1px #f5f5f5;
+}
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover{
+  color: #d6b161;
+  border-color: #f0f0f0;
+  background-color: white;
+}
+/*submenu row*/
+.navbar-nav>li>ul>li>a {
+  cursor: pointer;
+  padding: 5px 15px 5px 35px;
+}
+.navbar-nav>li>ul>li>a:hover {
+  color: #d6b161;
+  background-color: white;
+}

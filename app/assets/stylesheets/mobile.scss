@@ -1,0 +1,17 @@
+@media screen and (max-width: 768px) {
+  .navbar-default .navbar-nav>li.open>ul>li:active>a {
+    color: #d6b161;
+  }
+  .container>.navbar-collapse,
+  .container>.navbar-header{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .navbar-default .menuzord-menu.menuzord-indented>li>ul.dropdown>li>ul.dropdown>li>a {
+    padding-left: 60px;
+  }
+
+  .navbar-brand {
+    padding-left: 0px;
+  }
+}
