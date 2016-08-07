@@ -81,8 +81,8 @@
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:focus,
 .navbar-default .navbar-nav>.open>a:hover{
-  color: #d6b161;
-  border-color: #f0f0f0;
+  color: $primary-color;
+  border-color: $border-color;
   background-color: white;
 }
 /*submenu row*/

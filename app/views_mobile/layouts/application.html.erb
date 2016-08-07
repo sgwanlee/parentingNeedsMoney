@@ -13,9 +13,9 @@
 </head>
 <body id="page-top" data-target=".navbar-fixed-top">
   <div class="wrapper">
-  <%= render partial: "static/header_mobile", locals: {menus: @menus, categories: @categories, current_category_name: @current_category_name} %>
+  <%= render partial: "static/header_mobile", locals: {menus: @menus, categories: @categories, category: @category} %>
   <%= yield %>
-  <%= render 'categories/modal' %>
+  <%= render partial: 'categories/modal', locals: {categories: @categories, category: @category} %>
   <%= render 'layouts/footer_mobile' %>
   <%= debug(params) if Rails.env.development? %>
   </div>

@@ -1,0 +1,21 @@
+#categoryModal {
+  .modal-body {
+    li {
+      text-align: center;
+      line-height: 3;
+      font-size: 18px;
+      border-bottom: 1px solid #f0f0f0;
+      a {
+        color: $text-color;
+      }
+    }
+    li.selected {
+      a {
+        color: $primary-color;
+      }
+    }
+  }
+  .modal-dialog {
+    margin: 50px 40px;
+  }
+}

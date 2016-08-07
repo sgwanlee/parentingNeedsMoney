@@ -3,8 +3,7 @@ class CategoriesController < ApplicationController
 
   def show
     id = params[:id] || 1
-    category = Category.find_by(id: id)
-    @current_category_name = category.name
+    @category = Category.find_by(id: id)
     @menus = Menu.includes(:sub_menus).where(category_id: id)
     @categories = Category.all
   end
