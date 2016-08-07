@@ -3,7 +3,14 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'static#home'
+  root 'categories#show'
+  get 'memus' => 'static#menus'
+
+  resources :categories do
+    resources :menus, shallow: true do
+      resources :sub_menus, shallow: true
+    end
+  end
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

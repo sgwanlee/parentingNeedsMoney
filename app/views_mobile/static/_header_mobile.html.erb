@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand page-scroll" href=<%= if params[:id] then "/?category_id="+params[:id] else "/" end%>>
+        육아는 아이템전
+      </a>
+      <!-- Button trigger modal -->
+      <a href="#" class="navbar-brand modal-toggle pull-right" data-toggle="modal" data-target="#categoryModal" role="button" aria-haspopup="true" aria-expanded="false">
+        <%= current_category_name %> <%= fa_icon "angle-down" %>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <% menus.each do |menu| %>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+              <%= menu.name %>
+              <span class="indicator">
+                <%= fa_icon "angle-down" %>
+              </span>
+            </a>
+            <ul class="dropdown-menu">
+              <% menu.sub_menus.each do |sub_menu| %>
+                <li>
+                  <a href=><%= sub_menu.name %></a>
+                </li>
+              <% end %>
+            </ul>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>

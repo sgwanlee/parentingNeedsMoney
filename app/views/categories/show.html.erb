@@ -1,0 +1,20 @@
+<%= render partial: "static/header", locals: {categories: @categories, current_category_name: @current_category_name} %>
+
+<div class="page-content">
+  <div class="container">
+    <div class="row">
+      <div class="side-bar col-md-3">
+        <%= render partial: "static/side_bar", locals: {menus: @menus} %>
+      </div>
+      <div class="col-md-9">
+        <% @menus.each do |menu| %>
+          <% menu.sub_menus.each do |sub_menu| %>
+            <div class="row" style="background-color:#eee;">
+              <%= menu.name + " - " + sub_menu.name %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
