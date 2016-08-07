@@ -28,7 +28,7 @@
             <ul class="dropdown-menu">
               <% menu.sub_menus.each do |sub_menu| %>
                 <li>
-                  <a href=><%= sub_menu.name %></a>
+                  <a href="<%= sub_menu_path(sub_menu) %>"><%= sub_menu.name %></a>
                 </li>
               <% end %>
             </ul>

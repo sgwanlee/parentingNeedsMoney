@@ -8,8 +8,14 @@
 
 category = Category.create(name: "출산전")
   menu = category.menus.create(name: "임산부용품")
-    menu.sub_menus.create!(name: "임부복")
-    menu.sub_menus.create!(name: "튼살크림")
+    sub_menu = menu.sub_menus.create!(name: "임부복")
+
+    sub_menu = menu.sub_menus.create!(name: "튼살크림")
+      sub_menu.items.create!(name: "튼살크림", brand: "클라란스", url: "http://shopping.phinf.naver.net/main_4065930/4065930393.20130424111115.jpg", comment: "우리집에도 있다.")
+      sub_menu.items.create!(name: "튼살크림B", brand: "모이스앤로이스", url: "http://shopping.phinf.naver.net/main_9207819/9207819590.1.jpg?type=f140", comment: "우리집에도 있다.")
+      sub_menu.items.create!(name: "튼살크림B", brand: "비오템", url: "http://shopping.phinf.naver.net/main_7843308/7843308312.20140730104238.jpg?type=f300", comment: "우리집에도 있다.")
+      sub_menu.items.create!(name: "마더스 크림 200g", brand: "프라젠트라", url: "http://shopping.phinf.naver.net/main_7089208/7089208921.20150626115930.jpg?type=f300", comment: "우리집에도 있다.")
+
     menu.sub_menus.create!(name: "산모패드")
     menu.sub_menus.create!(name: "임산부 손목보호대")
     menu.sub_menus.create!(name: "니플밤")
@@ -54,3 +60,4 @@ category = Category.create(name: "생후 3개월")
 category = Category.create(name: "생후 4개월")
 category = Category.create(name: "생후 5개월")
 category = Category.create(name: "생후 6개월")
+

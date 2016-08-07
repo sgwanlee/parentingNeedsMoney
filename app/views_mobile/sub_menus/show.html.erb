@@ -1,0 +1,38 @@
+<div class="page-content">
+  <div class="container">
+    <div class="row">
+      <%= @sub_menu.menu.name %> - <%= @sub_menu.name %>
+    </div>
+    <% if !( @sub_menu.description.nil? || @sub_menu.description.empty? ) %>
+      <div class="row sub-menu-desc">
+        <%= @sub_menu.description %>
+      </div>
+    <% end %>
+    <% if @sub_menu.items.empty? %>
+      <p>등록된 item이 없습니다.</p>
+    <% end %>
+    <% @sub_menu.items.each do |item| %>
+      <div class="row">
+        <div class="col-xs-4">
+          <%= image_tag item.url, class: "img-responsive" %>
+        </div>
+        <div class="col-xs-8">
+          <div class="row">
+            <%= item.brand %>
+          </div>
+          <div class="row">
+            <%= item.name %>
+          </div>
+        </div>
+      </div>
+      <% if !item.comment.empty? %>
+        <div class="row item-comment">
+          Editor's comment
+          <div>
+            <%= item.comment %>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+</div>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160806144326) do
+ActiveRecord::Schema.define(version: 20160807143113) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -25,6 +25,9 @@ ActiveRecord::Schema.define(version: 20160806144326) do
     t.string   "url"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "sub_menu_id"
+    t.string   "brand"
+    t.string   "comment"
   end
 
   create_table "menus", force: :cascade do |t|
@@ -36,9 +39,10 @@ ActiveRecord::Schema.define(version: 20160806144326) do
 
   create_table "sub_menus", force: :cascade do |t|
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.integer  "menu_id"
+    t.string   "description"
   end
 
 end
